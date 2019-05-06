@@ -1,32 +1,33 @@
-package m2i.formation.java.idao;
+package m2i.formation.java.idao.impl;
 
 import java.util.List;
 
-import m2i.formation.java.buisness.Arrondissement;
+import m2i.formation.java.buisness.Ville;
+import m2i.formation.java.idao.IDAO;
 
-public class DAO_Arrondissement implements IDAO<Arrondissement> 
+public class DAO_Ville implements IDAO<Ville> 
 {
 
 	@Override
-	public int Create(Arrondissement obj) {
+	public int Create(Ville obj) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public Arrondissement Retreive(int id) {
+	public Ville Retreive(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Arrondissement> RetreiveAll() {
+	public List<Ville> RetreiveAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int Update(Arrondissement obj) {
+	public int Update(Ville obj) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

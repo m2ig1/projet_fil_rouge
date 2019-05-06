@@ -1,32 +1,33 @@
-package m2i.formation.java.idao;
+package m2i.formation.java.idao.impl;
 
 import java.util.List;
 
-import m2i.formation.java.buisness.Element;
+import m2i.formation.java.buisness.Carte;
+import m2i.formation.java.idao.IDAO;
 
-public class DAO_Element implements IDAO<Element> 
+public class DAO_Carte implements IDAO<Carte> 
 {
 
 	@Override
-	public int Create(Element obj) {
+	public int Create(Carte obj) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public Element Retreive(int id) {
+	public Carte Retreive(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Element> RetreiveAll() {
+	public List<Carte> RetreiveAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int Update(Element obj) {
+	public int Update(Carte obj) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
