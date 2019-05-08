@@ -15,9 +15,9 @@ public class Utilitaire2
 {
 	
 	
-	final static String url = "jdbc:mysql://localhost:3306/projet_ecole?serverTimezone=UTC"; 
-	final static String user = "root";
-	final static String pwd = "" ;
+	final static String url = "jdbc:mysql://151.80.59.182:3306/restaurant?serverTimezone=UTC"; 
+	final static String user = "m2ig1";
+	final static String pwd = "m2iFormation" ;
 	
 	private static Connection _Cnn = Connexion.getConnection(url, user, pwd);
 	
@@ -74,9 +74,9 @@ public class Utilitaire2
 	{
 		List<String> mesAttributs = Utilitaire2.nomDesColonnes(nomTable);
 		String SqlUpdate = "UPDATE "+ nomTable + " SET ";
-		for(String f : mesAttributs)
+		for(int i = 1; i <mesAttributs.size() ; i++)
 		{
-			SqlUpdate += f + " = ?, ";
+			SqlUpdate += mesAttributs.get(i) + " = ?, ";
 		}
 		SqlUpdate = SqlUpdate.substring(0, SqlUpdate.length()-2);
 		SqlUpdate += " WHERE ";

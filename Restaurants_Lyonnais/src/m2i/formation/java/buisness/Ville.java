@@ -19,6 +19,13 @@ public class Ville
 		this.Nom = nom;
 		this.arr = arr;
 	}
+	
+	public Ville(int iD_Ville, String nom) 
+	{
+		super();
+		ID_Ville = iD_Ville;
+		this.Nom = nom;
+	}
 
 	
 	//Getteur et Setteur
@@ -40,6 +47,13 @@ public class Ville
 	public void setArr(List<Arrondissement> arr) {
 		this.arr = arr;
 	}
+
+	@Override
+	public String toString() {
+		return "Ville [ID_Ville=" + ID_Ville + ", Nom=" + Nom + "]";
+	}
+	
+	
 	
 	
 

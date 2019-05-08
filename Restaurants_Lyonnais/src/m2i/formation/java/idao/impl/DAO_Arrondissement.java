@@ -7,7 +7,6 @@ import m2i.formation.java.idao.IDAO;
 
 public class DAO_Arrondissement implements IDAO<Arrondissement> 
 {
-	//teste
 
 	@Override
 	public int Create(Arrondissement obj) {
