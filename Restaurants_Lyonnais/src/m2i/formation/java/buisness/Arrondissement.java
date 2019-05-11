@@ -5,7 +5,7 @@ import java.util.List;
 public class Arrondissement 
 {
 	//Attributs
-	int ID_Arrondissement;
+	int id_arrondissement;
 	int numeroArrondissement;
 	int IDE_Ville;
 	//il y a plusieur resto dans un arrondissement
@@ -15,14 +15,14 @@ public class Arrondissement
 	//Constructeur
 	public Arrondissement(int iD_Arrondissement, int numeroArrondissement, int iDE_Ville, List<Restaurant> resto) {
 		super();
-		ID_Arrondissement = iD_Arrondissement;
+		id_arrondissement = iD_Arrondissement;
 		this.numeroArrondissement = numeroArrondissement;
 		IDE_Ville = iDE_Ville;
 		this.resto = resto;
 	}
 	public Arrondissement(int iD_Arrondissement, int numeroArrondissement, int iDE_Ville) {
 		super();
-		ID_Arrondissement = iD_Arrondissement;
+		id_arrondissement = iD_Arrondissement;
 		this.numeroArrondissement = numeroArrondissement;
 		IDE_Ville = iDE_Ville;
 	}
@@ -30,10 +30,10 @@ public class Arrondissement
 	
 	//Getteur et Setteur
 	public int getID_Arrondissement() {
-		return ID_Arrondissement;
+		return id_arrondissement;
 	}
 	public void setID_Arrondissement(int iD_Arrondissement) {
-		ID_Arrondissement = iD_Arrondissement;
+		id_arrondissement = iD_Arrondissement;
 	}
 	public int getNumeroArrondissement() {
 		return numeroArrondissement;
